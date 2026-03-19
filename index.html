@@ -2,13 +2,303 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Francis First Website From Scratch</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Francis Corpuz | Resume</title>
+  <style>
+    :root {
+      --bg: #f3f6fb;
+      --panel: #ffffff;
+      --primary: #0f4c81;
+      --primary-soft: #e7f0fa;
+      --text: #1d2733;
+      --muted: #5b6a7a;
+      --line: #d6e0ea;
+      --accent: #1a7f64;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(180deg, var(--bg) 0%, #eef3f9 100%);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    .page {
+      max-width: 980px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: var(--panel);
+      border-radius: 16px;
+      box-shadow: 0 8px 28px rgba(15, 76, 129, 0.14);
+      border: 1px solid var(--line);
+    }
+
+    header {
+      border-bottom: 2px solid var(--line);
+      padding-bottom: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      margin: 0;
+      color: var(--primary);
+      font-size: 2rem;
+      letter-spacing: 0.02em;
+    }
+
+    .subtitle {
+      margin: 0.25rem 0 0.75rem;
+      font-size: 1.1rem;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .contact {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    section {
+      margin-top: 1.25rem;
+    }
+
+    h2 {
+      margin: 0 0 0.6rem;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--primary);
+      padding: 0.3rem 0.55rem;
+      background: var(--primary-soft);
+      border-left: 4px solid var(--primary);
+    }
+
+    .job,
+    .project,
+    .edu {
+      margin-bottom: 1rem;
+      padding: 0.75rem 0.85rem;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #fcfdff;
+    }
+
+    .role-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .role {
+      margin: 0;
+      font-weight: 700;
+    }
+
+    .date {
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .org {
+      margin: 0.2rem 0 0.4rem;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    ul {
+      margin: 0.4rem 0 0;
+      padding-left: 1.15rem;
+    }
+
+    li {
+      margin-bottom: 0.25rem;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 0.75rem;
+    }
+
+    .skill-card {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 0.75rem;
+      background: #fcfdff;
+    }
+
+    .skill-card strong {
+      color: var(--primary);
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+
+    @media (max-width: 680px) {
+      .page {
+        margin: 1rem;
+        padding: 1rem;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <h1>Francis Corpuz</h1>
-  <p><em>Co Founder of Great Idea<em /></p>
+  <main class="page">
+    <header>
+      <h1>FRANCIS CORPUZ</h1>
+      <p class="subtitle">Registered Nurse | Technical Specialist &amp; Full-Stack Developer</p>
+      <p class="contact">Manila, Philippines | 09282875479 | fcorpuz.hpcs@gmail.com</p>
+    </header>
+
+    <section>
+      <h2>Professional Summary</h2>
+      <p>
+        Dynamic Technical Specialist with a unique background as a Registered Nurse, combining clinical precision with
+        advanced information technology expertise. Highly proficient in hardware troubleshooting, network
+        administration, and full-stack software development. Proven track record in managing government digital assets
+        for the Department of Health and developing independent, secure, and scalable software applications. Expert in
+        technical documentation, system maintenance, and bridging the gap between healthcare requirements and technical
+        solutions.
+      </p>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <article class="skill-card">
+          <strong>Hardware &amp; Networking</strong>
+          Professional troubleshooting of PCs, laptops, and printers; configuration and maintenance of Local Area
+          Networks (LAN) and Wi-Fi; server maintenance and infrastructure optimization.
+        </article>
+        <article class="skill-card">
+          <strong>Software &amp; OS Administration</strong>
+          Expert installation and management of Windows and Linux operating systems; adept at system backups and data
+          security.
+        </article>
+        <article class="skill-card">
+          <strong>Full-Stack Development</strong>
+          Next.js, TypeScript, Supabase, WordPress, E-commerce development, and API integration.
+        </article>
+        <article class="skill-card">
+          <strong>Design &amp; Documentation</strong>
+          UI/UX design (Adobe Photoshop), mobile app architecture, and comprehensive technical writing for system
+          specifications and functional requirements.
+        </article>
+        <article class="skill-card">
+          <strong>Digital Marketing</strong>
+          SEO, Content Marketing, Google &amp; Apple Analytics, and App Store Optimization (ASO).
+        </article>
+        <article class="skill-card">
+          <strong>AI Implementation</strong>
+          Advanced use of AI tools for code generation, automation, and workflow efficiency.
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Professional Experience</h2>
+
+      <article class="job">
+        <p class="org">Department of Health – Health Promotion &amp; Communication Services</p>
+        <div class="role-line">
+          <p class="role">Social Media &amp; Website Administrator</p>
+          <span class="date">05/2017 – 06/2018</span>
+        </div>
+        <ul>
+          <li>Administered the Health Promotion website, implementing optimizations for security, layout, and
+            technological performance.</li>
+          <li>Developed and facilitated a digital content approval system between Health Programs and Social Media Agency
+            partners.</li>
+          <li>Managed the department’s social media presence, strategizing and designing high-impact health promotion
+            campaigns.</li>
+          <li>Provided on-site technical hardware and software support for the Secretary of Health and other high-level
+            DOH program activities.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <p class="org">Department of Health – Public Assistance Unit</p>
+        <div class="role-line">
+          <p class="role">Health Program Officer II</p>
+          <span class="date">04/2010 – 02/2015</span>
+        </div>
+        <ul>
+          <li>Managed and coordinated with the EWEBPAIS program for patient assistance tracking.</li>
+          <li>Screened and evaluated applicants for the Medical Health Care Assistance Program (MHCAP), ensuring
+            accurate data entry and system management.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section>
+      <h2>Technical Projects</h2>
+
+      <article class="project">
+        <div class="role-line">
+          <p class="role">Exam Platform (SaaS) — Full-Stack Developer</p>
+          <span class="date">2025 – Present</span>
+        </div>
+        <ul>
+          <li>Architecting a comprehensive examination platform using Next.js, TypeScript, and Supabase.</li>
+          <li>Implementing secure authentication, database management, and real-time performance tracking.</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <div class="role-line">
+          <p class="role">Medical Findings (iOS App) — Technical Lead &amp; Developer</p>
+          <span class="date">05/2020 – Present</span>
+        </div>
+        <ul>
+          <li>Developed a specialized word game for healthcare students to enhance medical vocabulary.</li>
+          <li>Managed the full product lifecycle: UI/UX design, content aggregation, and App Store optimization.</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <div class="role-line">
+          <p class="role">RNpedia — Web Administrator &amp; Developer</p>
+          <span class="date">08/2010 – Present</span>
+        </div>
+        <ul>
+          <li>Built and maintained large-scale educational platforms for nursing professionals.</li>
+          <li>Performed all server migrations, CMS updates, and SEO strategies to maintain high global traffic.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <article class="edu">
+        <p class="role">Bachelor of Science in Nursing</p>
+        <p class="org">Emilio Aguinaldo College</p>
+        <p class="date">06/2007 – 03/2010</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Eligibility &amp; Certifications</h2>
+      <ul>
+        <li>Registered Nurse (RA 1080): PRC License No. 0439250 (Equivalent to Career Service Professional / Second
+          Level Eligibility)</li>
+        <li>Technical Proficiencies: Knowledgeable in Network Maintenance, Hardware Troubleshooting, and Full-Stack Web
+          Development.</li>
+      </ul>
+    </section>
+  </main>
 </body>
 
 </html>
